@@ -32,6 +32,7 @@ services:
     env_file: env/postgres.env
     volumes:
     - netbox-postgres-data:/var/lib/postgresql/data
+    - /home/guest/netbox:/var/lib/postgresql/netbox
 
   # redis
   redis:
